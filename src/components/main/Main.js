@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Filtros from '../filtro/Filtros';
 import Produtos from '../produtos/Produtos';

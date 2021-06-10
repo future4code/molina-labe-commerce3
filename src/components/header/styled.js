@@ -15,7 +15,7 @@ const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `
-const Logo = styled.a`
+const Logo = styled.div`
   font-size: 1.5em;
   color: #FC3D21;
   font-weight: bold;
