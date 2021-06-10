@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+const ContainerMain = styled.div`
+  margin-top: 20vh;
+  padding: 0 80px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 100vh;
 `
 
-const Text = styled.p`
-  color: white;
+const ContainerProdutos = styled.div`
+  border: 1px solid red;
 `
 
-export { Container, Text }
+export { ContainerMain, ContainerProdutos }
