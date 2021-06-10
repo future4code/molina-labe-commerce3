@@ -9,7 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background-color: black;
+  background-color: var(--azul);
 `
 
 const Main = styled.div`
@@ -22,7 +22,7 @@ const Main = styled.div`
 
 const Title = styled.h1`
   font-size: 1.5rem;
-  color: var(--azul);
+  color: var(--vermelho);
   margin-bottom: 2%;
 `
 
