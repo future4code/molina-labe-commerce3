@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cabecalho, Container, Logo, Carrinho } from './styled'
+import {FaShoppingCart, FaRocket} from 'react-icons/fa'
 
 class Header extends React.Component {
   render() {
@@ -7,11 +8,17 @@ class Header extends React.Component {
       <Cabecalho>
         <Container>
           <div>
-            <Logo href='/'>AstroStore</Logo>
+            <Logo href='/'>
+              <FaRocket/>
+              <p>AstroStore</p>
+            </Logo>
           </div>
 
           <div>
-            <Carrinho href='/'>Cart ()</Carrinho>
+            <Carrinho href='/'>
+              <FaShoppingCart/>  
+              <p>Cart()</p>
+            </Carrinho>
           </div>
         </Container>
       </Cabecalho>
