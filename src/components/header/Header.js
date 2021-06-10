@@ -1,12 +1,27 @@
 import React from 'react';
-import { Container, Text } from './styled'
+import { Cabecalho, Container, Logo, Carrinho } from './styled'
+import {FaShoppingCart, FaRocket} from 'react-icons/fa'
 
 class Header extends React.Component {
   render() {
     return (
-      <Container>
-        <Text>Header</Text>
-      </Container>
+      <Cabecalho>
+        <Container>
+          <div>
+            <Logo href='/'>
+              <FaRocket/>
+              <p>AstroStore</p>
+            </Logo>
+          </div>
+
+          <div>
+            <Carrinho href='/'>
+              <FaShoppingCart/>  
+              <p>Cart()</p>
+            </Carrinho>
+          </div>
+        </Container>
+      </Cabecalho>
     );
   }
 }
