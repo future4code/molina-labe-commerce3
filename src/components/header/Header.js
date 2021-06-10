@@ -10,7 +10,7 @@ class Header extends React.Component {
           <div>
             <Logo href='/'>
               <FaRocket/>
-              <p>AstroStore</p>
+              <p>AstroShop</p>
             </Logo>
           </div>
 

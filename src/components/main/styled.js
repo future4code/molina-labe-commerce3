@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 const ContainerMain = styled.div`
   max-width: 1200px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 100px auto;
   display: flex;
+  border: 1px solid red;
 `
 
 const ContainerProdutos = styled.div`
