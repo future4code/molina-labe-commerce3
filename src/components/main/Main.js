@@ -8,9 +8,7 @@ class Main extends React.Component {
     return (
       <ContainerMain>
         <Filtros/>
-        <ContainerProdutos>
-          <Produtos/>
-        </ContainerProdutos>
+        <Produtos/>
       </ContainerMain>
     );
   }

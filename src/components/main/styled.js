@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
 const ContainerMain = styled.div`
-  margin-top: 20vh;
-  padding: 0 80px;
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
   display: flex;
 `
 
 const ContainerProdutos = styled.div`
-  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
 `
 
 export { ContainerMain, ContainerProdutos }
