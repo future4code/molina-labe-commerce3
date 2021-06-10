@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Filtros from '../filtro/Filtros';
 import Produtos from '../produtos/Produtos';
@@ -8,7 +9,13 @@ class Main extends React.Component {
     return (
       <ContainerMain>
         <Filtros/>
+<<<<<<< HEAD
         <Produtos/>
+=======
+        <ContainerProdutos >
+          <Produtos/>
+        </ContainerProdutos>
+>>>>>>> master
       </ContainerMain>
     );
   }
