@@ -9,13 +9,9 @@ class Main extends React.Component {
     return (
       <ContainerMain>
         <Filtros/>
-<<<<<<< HEAD
-        <Produtos/>
-=======
         <ContainerProdutos >
           <Produtos/>
         </ContainerProdutos>
->>>>>>> master
       </ContainerMain>
     );
   }
