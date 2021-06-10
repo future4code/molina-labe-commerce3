@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+  color: #a5a5a5;
 }
 
 :root {
   --vermelho: #FC3D21;
-  --azul: #0B3D91;
+  --azul: #1178f2;
 }
 
 .App {
