@@ -20,6 +20,14 @@ const Main = styled.div`
   margin-bottom: 1%;
 `
 
+const Logo = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #FC3D21;
+`
+
 const Title = styled.h1`
   font-size: 1.5rem;
   color: var(--vermelho);
@@ -39,7 +47,7 @@ const Contact = styled.div`
 `
 
 const TextContact = styled.div`
-  width: 50%;
+  width: 40%;
 
   display: flex;
   flex-direction: column;
@@ -86,6 +94,7 @@ const Bottom = styled.div`
 export {
   Container,
   Main,
+  Logo,
   Title,
   Text,
   Contact,
