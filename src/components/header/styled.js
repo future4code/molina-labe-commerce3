@@ -8,10 +8,12 @@ const Cabecalho = styled.header`
 `
 
 const Container = styled.div`
-  padding: 20px 60px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 `
 const Logo = styled.a`
   font-size: 1.5em;
