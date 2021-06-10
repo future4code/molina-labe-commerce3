@@ -71,9 +71,9 @@ Este projeto está sob licença MIT.
 
 
 Feito com :heart: por:
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> | 
-<a href="https://github.com/joaopedrocoder" target="_blank">João Pedro</a> | 
-<a href="https://github.com/Ishmaiha" target="_blank">Ishmaiha Kim</a> | 
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/joaopedrocoder" target="_blank">João Pedro</a>
+<a href="https://github.com/Ishmaiha" target="_blank">Ishmaiha Kim</a>
 <a href="https://github.com/Joice-silva" target="_blank">Joice Silva</a>
 
 &#xa0;
