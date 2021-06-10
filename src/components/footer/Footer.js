@@ -52,7 +52,7 @@ class Footer extends React.Component {
         </Main>
         <Line />
         <Bottom>
-          <Text>© Copyright 2021 - TODOS OS DIREITOS RESERVADOS - LabEcommerce</Text>
+          <Text>© Copyright 2021 - Todos os direitos reservados a AstroStore</Text>
         </Bottom>
       </Container>
     );
