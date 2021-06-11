@@ -20,4 +20,4 @@ class Carrinho extends React.Component {
     
 }
 
-export {Carrinho}
+export default Carrinho

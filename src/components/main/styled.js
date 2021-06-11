@@ -13,4 +13,29 @@ const ContainerProdutos = styled.div`
   padding: 0 5px;
 `
 
-export { ContainerMain, ContainerProdutos }
+const TopCards = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0% 5% 5% 5%;
+  align-items: center;
+
+  h3 {
+    font-size: 2rem;
+  }
+`
+
+const Order = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  select {
+    height: 1.5rem;
+  }
+`
+
+const TextOrder = styled.p`
+  width: 5vw;
+`
+
+export { ContainerMain, ContainerProdutos, TopCards, Order, TextOrder }

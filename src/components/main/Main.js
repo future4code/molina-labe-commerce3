@@ -2,7 +2,13 @@ import React from 'react';
 import Filtros from '../filtro/Filtros';
 import Produtos from '../produtos/Produtos';
 import camisetas from '../../camisetas.json'
-import { ContainerMain, ContainerProdutos } from './styled'
+import {
+  ContainerMain,
+  ContainerProdutos,
+  TopCards,
+  Order,
+  TextOrder
+} from './styled'
 
 
 class Main extends React.Component {
@@ -19,12 +25,23 @@ class Main extends React.Component {
     })
 
     return (
-      <ContainerMain>
-      
+      <ContainerMain>      
         <Filtros/>
-        <ContainerProdutos >
-          {Cards}
-        </ContainerProdutos>
+        <div>
+          <TopCards>
+            <h3>Camisetas</h3>
+            <Order>
+              <TextOrder>Ordenar por</TextOrder>
+              <select>
+                <option value="maiorPreco">Maior Preço</option>
+                <option value="menorPreco">Menor Preço</option>
+              </select>
+            </Order>
+          </TopCards>
+          <ContainerProdutos >
+            {Cards}
+          </ContainerProdutos>
+        </div>
       </ContainerMain>
     );
   }

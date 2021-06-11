@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Title, Text, Image, Font, Botao} from './styled'
+import {Card, Title, Text, Image, Font, Button} from './styled'
 
 class Produtos extends React.Component {
   
@@ -10,7 +10,7 @@ class Produtos extends React.Component {
         <Font>
           <Title>{this.props.titulo}</Title>
           <Text>R$ {this.props.preco},00</Text>
-          <Botao>Add ao carrinho</Botao>
+          <Button>Add ao carrinho</Button>
         </Font> 
       </Card>
 
