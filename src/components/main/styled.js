@@ -35,7 +35,7 @@ const Order = styled.div`
 `
 
 const TextOrder = styled.p`
-  width: 5vw;
+  width: 8vw;
 `
 
 export { ContainerMain, ContainerProdutos, TopCards, Order, TextOrder }
