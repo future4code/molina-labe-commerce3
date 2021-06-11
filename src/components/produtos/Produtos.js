@@ -1,38 +1,19 @@
 import React from 'react';
-import {Container, Card, Title, Text, Image, Font} from './styled'
-
+import {Card, Title, Text, Image, Font, Botao} from './styled'
 
 class Produtos extends React.Component {
   
   render() {
     return (
-    <Container>
-      
       <Card>
-        <Image src='https://www.todoespacoonline.com/w/wp-content/uploads/2016/03/camiseta-deep-purple-masculina-300x300.png'/>
-        
+        <Image src={this.props.img}/>
         <Font>
-          <Title>Nome da Camiseta</Title>
-          <Text>Preço</Text>
-        </Font>
-
-        
+          <Title>{this.props.titulo}</Title>
+          <Text>R$ {this.props.preco},00</Text>
+          <Botao>Add ao carrinho</Botao>
+        </Font> 
       </Card>
 
-      <Card>
-
-        <Image src='https://www.todoespacoonline.com/w/wp-content/uploads/2020/02/camiseta-larino-americano-feminina.png'/>
-        
-        <Font>
-          <Title>Nome da Camiseta</Title>
-          <Text>Preço</Text>
-        </Font>
-
-      </Card>
-    
-    </Container>
-    
-      
     );
   }
 }
