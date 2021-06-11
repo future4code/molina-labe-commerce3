@@ -4,6 +4,7 @@ import Produtos from '../produtos/Produtos';
 import camisetas from '../../camisetas.json'
 import { ContainerMain, ContainerProdutos } from './styled'
 
+
 class Main extends React.Component {
   
   render() {
@@ -19,6 +20,7 @@ class Main extends React.Component {
 
     return (
       <ContainerMain>
+      
         <Filtros/>
         <ContainerProdutos >
           {Cards}

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Card = styled.div`
     border: solid #d3cfcf 1px;
-    margin: 5px 10px;
+    margin: 10px;
     max-width: 280px;
 `
 

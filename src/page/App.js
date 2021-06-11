@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import Main from '../components/main/Main';
 import { createGlobalStyle } from 'styled-components';
+import { Carrinho } from '../components/carrinho/Carrinho';
 
 const EstilosGlobais = createGlobalStyle`
   *{
@@ -24,6 +25,7 @@ class App extends React.Component {
         <EstilosGlobais/>
         <Header/>
         <Main/>
+        <Carrinho/>
         <Footer/>
       </div>
     );
