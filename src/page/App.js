@@ -27,12 +27,20 @@ const EstilosGlobais = createGlobalStyle`
 
 class App extends React.Component {
   render() {
+    let Pagina = Main
+    const {pathname} = window.location
+
+    if(pathname === '/home'){
+      Pagina = Main
+    }else if(pathname === '/carrinho'){
+      Pagina = Carrinho
+    }
+
     return (
       <div className="App">
         <EstilosGlobais/>
         <Header/>
-        <Main/>
-        <Carrinho/>
+        <Pagina/>
         <Footer/>
       </div>
     );

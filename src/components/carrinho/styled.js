@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const Container = styled.div`
     max-width: 800px;
     padding: 2%;    
-    margin: 0 auto;
+    margin: 80px auto;
+    height: 50vh;
 `
 const Main = styled.div`
     display: flex;
