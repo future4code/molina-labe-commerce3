@@ -4,7 +4,7 @@ const Container = styled.div`
     max-width: 800px;
     padding: 2%;    
     margin: 80px auto;
-    height: 80vh;
+    height: 60vh;
 `
 const Main = styled.div`
     display: flex;
