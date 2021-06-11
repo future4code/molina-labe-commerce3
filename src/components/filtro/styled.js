@@ -9,6 +9,21 @@ const ContainerFiltro = styled.div`
     cursor: pointer; //Geralmente é usado em botoes e coisas q voce clica,m, nao no container inteiro
     background-color: #F3F3F3;
     text-align: left;
+    height: 400px;
+`
+const ContainerLabel = styled.div`
+    color: #333;
+    padding: 20px 20px 20px 0px;
+    display: grid;
 `
 
-export {ContainerFiltro}
+const Titulo = styled.h3`
+    color: #333;
+`
+
+const Label = styled.label`
+    font-weight: bold;
+    margin-bottom: 8px;
+`
+export {ContainerFiltro, ContainerLabel, Titulo, Label}
+

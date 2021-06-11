@@ -1,29 +1,31 @@
 import React from 'react';
-import {ContainerFiltro} from "./styled"
+import {ContainerFiltro, ContainerLabel, Titulo, Label} from "./styled"
 
 class Filtros extends React.Component {
   render() {
     return (
       <ContainerFiltro>
-        <h3>Filtros selecionados</h3>
-        <br/>
-        <label>
-          Valor mínimo:
-        </label>
-        <br/>
-        <input type="number" value=""/>
-        <br/>
-        <label>
-          Valor máximo:
-        </label>
-        <br/>
-        <input type="number" value="50"/>
-        <br/>
-        <label>
-          Produto:
-        </label>
-        <br/>
-        <input type="text" value=""/>
+        <Titulo>Filtros selecionados</Titulo>
+        <ContainerLabel>
+          <Label>
+            Valor mínimo:
+          </Label>
+          <input for ="valor minimo" min="50" type="number" maxvalue=""/>
+        </ContainerLabel>
+
+        <ContainerLabel>
+          <Label>
+            Valor máximo:
+          </Label>
+          <input for="valor maximo" min="50" type="number" value="50"/>
+        </ContainerLabel>
+
+        <ContainerLabel>
+          <Label>
+            Produto:
+          </Label>
+          <input for ="produto" type="text" value=""/>
+        </ContainerLabel>
 
       </ContainerFiltro>
 
