@@ -33,8 +33,8 @@ class Main extends React.Component {
             <Order>
               <TextOrder>Ordenar por</TextOrder>
               <select>
-                <option value="maiorPreco">Maior Preço</option>
-                <option value="menorPreco">Menor Preço</option>
+                <option value="bigPrice">Maior Preço</option>
+                <option value="smallPrice">Menor Preço</option>
               </select>
             </Order>
           </TopCards>
