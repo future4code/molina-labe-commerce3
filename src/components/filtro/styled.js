@@ -1,29 +1,31 @@
 import styled from 'styled-components'
 
 const ContainerFiltro = styled.div`
-    margin-top: 15vh; //Deixou o filtro muito pra baixo
     padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20vh;
-    cursor: pointer; //Geralmente é usado em botoes e coisas q voce clica,m, nao no container inteiro
     background-color: #F3F3F3;
     text-align: left;
     height: 400px;
+    border-radius: 3px;
+    margin-top: 5px;
 `
 const ContainerLabel = styled.div`
     color: #333;
-    padding: 20px 20px 20px 0px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
 `
 
 const Titulo = styled.h3`
+    text-align: center;
     color: #333;
 `
 
 const Label = styled.label`
     font-weight: bold;
     margin-bottom: 8px;
+    font-size: 0.875em;
 `
 export {ContainerFiltro, ContainerLabel, Titulo, Label}
 

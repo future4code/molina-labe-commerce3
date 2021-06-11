@@ -10,6 +10,7 @@ const Container = styled.div`
   align-items: center;
 
   background-color: var(--azul);
+  margin-top: 50px;
 `
 
 const Main = styled.div`
