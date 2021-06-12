@@ -13,15 +13,13 @@ import {
 
 class Main extends React.Component {
   state = {
-    produtos:[
-      ...camisetas
-    ]
+    produtos:[...camisetas]
   }
 
   render() {
-    const Cards = this.state.produtos.map(({img, titulo, preco}) => {
+    const Cards = this.state.produtos.map(({id, img, titulo, preco}) => {
       return (
-        <Produtos
+        <Produtos key={id}
           img={img}
           titulo={titulo}
           preco={preco}

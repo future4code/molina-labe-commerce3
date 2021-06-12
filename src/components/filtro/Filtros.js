@@ -1,25 +1,28 @@
 import React from 'react';
-import {ContainerFiltro, ContainerLabel, Titulo, Label} from "./styled"
+import {ContainerFiltro, ContainerLabel, Titulo, Label, ContainerCheckBox} from "./styled"
 
 class Filtros extends React.Component {
   render() {
     return (
       <ContainerFiltro>
         <Titulo>Filtros selecionados</Titulo>
-        <ContainerLabel>
-          <Label>Valor mínimo:</Label>
-          <input type="number" min="0"  max="5000"/>
-        </ContainerLabel>
+        <ContainerCheckBox>
+          <input type="checkbox" value=""/>
+          <Label>Menos de R$ 30</Label>
+        </ContainerCheckBox>
+
+        <ContainerCheckBox>
+          <input type="checkbox" value=''/>
+          <Label>R$ 30 - R$ 50</Label>
+        </ContainerCheckBox>
+
+        <ContainerCheckBox>
+          <input type="checkbox" value=''/>
+          <Label>Mais de R$ 50</Label>  
+        </ContainerCheckBox>
 
         <ContainerLabel>
-          <Label>Valor máximo:</Label>
-          <input type="number" min="1" max="5000"/>
-        </ContainerLabel>
-
-        <ContainerLabel>
-          <Label>
-            Produto:
-          </Label>
+          <Label>Produto:</Label>
           <input for ="produto" type="text" value=""/>
         </ContainerLabel>
 
