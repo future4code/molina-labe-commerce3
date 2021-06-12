@@ -8,14 +8,14 @@ class Header extends React.Component {
       <Cabecalho>
         <Container>
           <div>
-            <Logo href='/'>
+            <Logo href='/home'>
               <FaRocket/>
               <p>AstroStore</p>
             </Logo>
           </div>
 
           <div>
-            <Carrinho href='/'>
+            <Carrinho href='/carrinho'>
               <FaShoppingCart/>  
               <p>Cart()</p>
             </Carrinho>
