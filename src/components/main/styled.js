@@ -38,4 +38,24 @@ const TextOrder = styled.p`
   width: 8vw;
 `
 
-export { ContainerMain, ContainerProdutos, TopCards, Order, TextOrder }
+const Container = styled.div`
+  max-width: 800px;
+  padding: 2%;    
+  margin: 80px auto;
+  min-height: 60vh;
+`
+
+const Title = styled.h3`
+  font-size: 1.75em;
+  margin-bottom: 5%;
+`
+
+export {
+  ContainerMain,
+  ContainerProdutos,
+  TopCards,
+  Order,
+  TextOrder,
+  Container,
+  Title
+}

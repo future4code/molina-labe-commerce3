@@ -1,23 +1,23 @@
 import React from 'react'
-import {FaTrash} from 'react-icons/fa'
-import {Container, Main, Title, Text, Price, Button} from './styled'
+import { FaTrash } from 'react-icons/fa'
+import { Main, Price, Button, Line } from './styled'
 
 class Carrinho extends React.Component {
-    render () {
-        return (
-            <Container>
-                <Title>Meu carrinho</Title>
-                <Main>
-                    <Text>Quantidade</Text>
-                    <Text>Nome</Text>
-                    <Price> R$,00 </Price>
-                    <Button> <FaTrash/> </Button>
-                </Main>
+  render() {
+    return (
+      <>
+        <Main>
+          <p><span>ID </span> {this.props.id}</p>
+          <p><span>Qtd </span> {this.props.qtd}</p>
+          <p><span>Nome:</span> {this.props.titulo}</p>
+          <Price>R$ {this.props.preco},00</Price>
+          <Button><FaTrash/></Button>
+        </Main>
+        <Line/>
+      </>
+    )
+  }
 
-            </Container>
-        )
-    }
-    
 }
 
 export default Carrinho
