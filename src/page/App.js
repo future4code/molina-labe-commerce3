@@ -11,7 +11,6 @@ const EstilosGlobais = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-align: center;
   }
 
   span {
