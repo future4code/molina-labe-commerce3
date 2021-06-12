@@ -12,9 +12,14 @@ import {
 
 
 class Main extends React.Component {
-  
+  state = {
+    produtos:[
+      ...camisetas
+    ]
+  }
+
   render() {
-    const Cards = camisetas.map(({img, titulo, preco}) => {
+    const Cards = this.state.produtos.map(({img, titulo, preco}) => {
       return (
         <Produtos
           img={img}
