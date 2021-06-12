@@ -7,17 +7,13 @@ class Filtros extends React.Component {
       <ContainerFiltro>
         <Titulo>Filtros selecionados</Titulo>
         <ContainerLabel>
-          <Label>
-            Valor mínimo:
-          </Label>
-          <input for ="valor minimo" min="1" type="number" max="5000"/>
+          <Label>Valor mínimo:</Label>
+          <input type="number" min="0"  max="5000"/>
         </ContainerLabel>
 
         <ContainerLabel>
-          <Label>
-            Valor máximo:
-          </Label>
-          <input for="valor maximo" min="1" max="5000" type="number"/>
+          <Label>Valor máximo:</Label>
+          <input type="number" min="1" max="5000"/>
         </ContainerLabel>
 
         <ContainerLabel>
