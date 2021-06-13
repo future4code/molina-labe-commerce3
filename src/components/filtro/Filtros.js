@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { 
   ContainerFiltro,
   ContainerLabel,
@@ -32,7 +33,7 @@ class Filtros extends React.Component {
             onKeyPress={this.props.onKeyPressBusca}
           />
         </ContainerLabel>
-      </ContainerFiltro>        
+      </ContainerFiltro>
     );
   }
 }
