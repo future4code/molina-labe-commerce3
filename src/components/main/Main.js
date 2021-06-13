@@ -73,6 +73,7 @@ class Main extends React.Component {
               <Order>
                 <TextOrder>Ordenar por</TextOrder>
                 <select value={this.state.filtro} onChange={this.onChangeFiltro}>
+                  <option>Selecione</option>
                   <option value="bigPrice">Maior Preço</option>
                   <option value="smallPrice">Menor Preço</option>
                 </select>
