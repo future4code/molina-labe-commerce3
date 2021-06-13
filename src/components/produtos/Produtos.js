@@ -26,6 +26,11 @@ class Produtos extends React.Component {
     })
   }
 
+  alertUser = () => {
+    return alert(`${this.props.titulo} 
+    (+) Adicionado ao Carrinho`)
+  }
+
   addCarrinho = () => {
     const novaCompra = {
       id: this.props.id,
@@ -36,9 +41,9 @@ class Produtos extends React.Component {
     
     const novoCarrinho = [...this.state.produtos, novaCompra]
 
-    
     this.setState({produtos: novoCarrinho})
     
+    this.alertUser()
     this.filtrarProdutos()
     console.log(this.state.produtos)
   }
