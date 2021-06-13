@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Labe Commerce Template" />
+  <img src="https://i.imgur.com/hhfotiJ.png" alt="AstroStore" />
 
   &#xa0;
 
