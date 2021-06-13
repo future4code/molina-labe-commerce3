@@ -15,7 +15,35 @@ import {
 
 class Main extends React.Component {
   state = {
-    carrinho: []
+    carrinho: [],
+    nomeBusca:'',
+    filtro:''
+  }
+
+  onChangeBusca = (event)=>{
+    this.setState({
+      nomeBusca: event.target.value
+    })
+  }
+
+  onChangeFiltro = (event)=>{
+    this.setState({
+      filtro: event.target.value
+    })
+  }
+
+  ordenaLista = ()=>{
+    switch (this.state.filtro) {
+      case 'smallPrice':
+        camisetas.sort((a, b)=> a.preco - b.preco)
+        break
+      case 'bigPrice':
+        camisetas.sort((a, b)=> b.preco - a.preco)
+        break
+      default:
+        camisetas.sort()
+        break
+    }
   }
 
   componentDidMount() {
@@ -28,18 +56,23 @@ class Main extends React.Component {
   }  
   
   render() {
+    this.ordenaLista()
+
     let Pagina
     const {pathname} = window.location
     if (pathname === '/'){
       Pagina = (
         <ContainerMain>      
-          <Filtros/>
+          <Filtros 
+            onChangeBusca={this.onChangeBusca}
+            value={this.state.nome}
+          />
           <div>
             <TopCards>
               <h3>Camisetas</h3>
               <Order>
                 <TextOrder>Ordenar por</TextOrder>
-                <select>
+                <select value={this.state.filtro} onChange={this.onChangeFiltro}>
                   <option value="bigPrice">Maior Preço</option>
                   <option value="smallPrice">Menor Preço</option>
                 </select>

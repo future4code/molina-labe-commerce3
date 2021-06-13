@@ -11,6 +11,7 @@ const ContainerProdutos = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 5px;
+  /* width: 71vw; */
 `
 
 const TopCards = styled.div`
