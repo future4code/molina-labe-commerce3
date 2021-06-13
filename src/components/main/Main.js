@@ -28,9 +28,9 @@ class Main extends React.Component {
   }  
   
   render() {
-    let Pagina = Main
+    let Pagina
     const {pathname} = window.location
-    if (pathname === '/home'){
+    if (pathname === '/'){
       Pagina = (
         <ContainerMain>      
           <Filtros/>

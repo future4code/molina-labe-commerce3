@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Title, Price, Image, Font, Button} from './styled'
+import {Card, Title, Price, Image, Button} from './styled'
 
 class Produtos extends React.Component {
   state = {
@@ -54,8 +54,6 @@ class Produtos extends React.Component {
         <Image src={this.props.img}/>
         <Title>{this.props.titulo}</Title>
         <Price>R$ {this.props.preco},00</Price>
-        {/* <Font>
-        </Font>  */}
         <Button
           onClick={this.addCarrinho}
         >Add ao carrinho</Button>
