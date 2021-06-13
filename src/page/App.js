@@ -3,7 +3,6 @@ import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import Main from '../components/main/Main';
 import { createGlobalStyle } from 'styled-components';
-import Carrinho from '../components/carrinho/Carrinho';
 
 const EstilosGlobais = createGlobalStyle`
   * {
@@ -26,20 +25,11 @@ const EstilosGlobais = createGlobalStyle`
 
 class App extends React.Component {
   render() {
-    let Pagina = Main
-    const {pathname} = window.location
-
-    if(pathname === '/home'){
-      Pagina = Main
-    }else if(pathname === '/carrinho'){
-      Pagina = Carrinho
-    }
-
     return (
       <div className="App">
         <EstilosGlobais/>
         <Header/>
-        <Pagina/>
+        <Main/>
         <Footer/>
       </div>
     );

@@ -8,7 +8,7 @@ class Header extends React.Component {
       <Cabecalho>
         <Container>
           <div>
-            <Logo href='/home'>
+            <Logo href='/'>
               <FaRocket/>
               <p>AstroStore</p>
             </Logo>
