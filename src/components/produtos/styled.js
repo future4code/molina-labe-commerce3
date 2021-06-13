@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
-  border: solid #d3cfcf 1px;
   margin: 10px;
   max-width: 280px;
-  cursor: pointer;
+  height: 420px;
+  display: grid;
+  grid-template-rows: 70% 8% 8% 13%;
   transition: 0.4s;
+  border: solid #d3cfcf 1px;
   border-radius: 2%;
 
   :hover {
@@ -14,20 +16,21 @@ const Card = styled.div`
 `
 
 const Title = styled.h4`
-  font-size: .75em;
+  font-size: 0.75em;
   color: #595959;
   text-align: left;
+  margin-left: 5%;
 `
 
-const Text = styled.p`
+const Price = styled.p`
   font-size: 1em;
   font-weight: bold;
   text-align: left;
-  margin-top: 5px;
+  margin-left: 5%;
 `
 
 const Font = styled.div`
-  padding: 10px 30px;
+  margin-left: 5%;
 `
 
 const Image = styled.img`
@@ -35,9 +38,8 @@ const Image = styled.img`
 `
 
 const Button = styled.button`
-  margin-top: 10px;
-  padding: 5px;
+  margin: 10px;
   cursor: pointer;
 `
 
-export { Card, Title, Text, Image, Font, Button }
+export { Card, Title, Price, Image, Font, Button }

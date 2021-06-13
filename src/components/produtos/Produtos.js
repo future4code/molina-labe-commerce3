@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Title, Text, Image, Font, Button} from './styled'
+import {Card, Title, Price, Image, Font, Button} from './styled'
 
 class Produtos extends React.Component {
   state = {
@@ -11,7 +11,7 @@ class Produtos extends React.Component {
     localStorage.setItem("produtos", JSON.stringify(produtos));
   }
 
-  filtrarProdutos = () => {
+  filtrarProdutos = () => {    
     this.state.produtos.filter(({id, qtd, titulo, preco}) => {
       if (this.props.id === id){
         this.setState({
@@ -52,13 +52,13 @@ class Produtos extends React.Component {
     return (
       <Card>
         <Image src={this.props.img}/>
-        <Font>
-          <Title>{this.props.titulo}</Title>
-          <Text>R$ {this.props.preco},00</Text>
-          <Button
-            onClick={this.addCarrinho}
-          >Add ao carrinho</Button>
-        </Font> 
+        <Title>{this.props.titulo}</Title>
+        <Price>R$ {this.props.preco},00</Price>
+        {/* <Font>
+        </Font>  */}
+        <Button
+          onClick={this.addCarrinho}
+        >Add ao carrinho</Button>
       </Card>
     );
   }
