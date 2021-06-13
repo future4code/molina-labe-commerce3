@@ -45,7 +45,6 @@ class Produtos extends React.Component {
     
     this.alertUser()
     this.filtrarProdutos()
-    console.log(this.state.produtos)
   }
 
   render() {
