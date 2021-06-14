@@ -75,15 +75,22 @@ const Line = styled.hr`
   height: 0.01rem;
   border: none;
   background: rgba(17, 120, 242, 0.5);
-  width: 90%;
+  width: 95%;
 `
 
 const Bottom = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
   align-items: center;
-  margin: 1%;
+  width: 90%;
+  margin: 7px auto;
+
+  p{
+    margin-top: 3px;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+  }
 `
 
 export {
