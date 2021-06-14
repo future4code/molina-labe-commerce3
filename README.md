@@ -33,7 +33,7 @@ Projeto criado com intuito de criar um ecommerce, onde teria a funcinabilidade d
 
 ## :sparkles: Surge ##
 
-<a href="http://" target="_blank">www.astrostore.com.br (arrumar o link)**********</a>
+<a href="http://" target="_blank">animated-cough.surge.sh</a>
 
 ## :rocket: Tecnologias ##
 
