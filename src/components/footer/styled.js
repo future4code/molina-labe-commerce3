@@ -1,38 +1,40 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  position: relative;
-  bottom: 0;
-  max-width: 100vw;
+  /* position: relative;
+  bottom: 0;*/
+  /* max-width: 100%;  
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: center; */
+  padding: 15px 60px 5px 60px;
   background-color: var(--azul);
   margin-top: 50px;
 `
 
 const Main = styled.div`
-  display: grid;
-  grid-template-columns: 40% 40% 20%;
-  width: 90vw;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const ContainerLogo = styled.div`
+  font-size: 1.5em;
+  color: #FC3D21;
+  flex: 2;
+  
 `
 
 const Logo = styled.div`
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  font-size: 1.5em;
-  color: #FC3D21;
+  margin-bottom: 5px;
 `
 
 const Title = styled.h1`
   font-size: 1.5rem;
   color: var(--vermelho);
-  margin-bottom: 2%;
 `
 
 const Text = styled.p`
@@ -44,35 +46,27 @@ const Text = styled.p`
 const Contact = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-`
-
-const TextContact = styled.div`
-  width: 40%;
-
-  display: flex;
-  flex-direction: column;
+  padding-left: 100px;
+  flex: 1;
 `
 
 const SocialMidia = styled.div`
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  text-align: center;
 `
 
 const IconSocial = styled.div`
-  height: 10vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
 `
 
 const Link = styled.a`
-  margin-left: 2%;
+  margin-left: 7px;
 `
 
 const Image = styled.img`
-  height: 45%;
+  width: 30px;
   margin-top: 5%;
 `
 
@@ -95,11 +89,11 @@ const Bottom = styled.div`
 export {
   Container,
   Main,
+  ContainerLogo,
   Logo,
   Title,
   Text,
   Contact,
-  TextContact,
   SocialMidia,
   IconSocial,
   Link,
